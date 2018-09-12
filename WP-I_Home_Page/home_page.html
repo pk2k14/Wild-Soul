@@ -1,0 +1,442 @@
+<html>
+<head>
+<title>Home page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.search
+{
+	width:210px;
+	height:30px;
+	border:2px solid #999; 
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+}
+#searchbox
+{
+	border-right:5px solid #999;
+	height:30px;
+	position: relative;
+	bottom:11px;
+}
+ul
+{
+	list-style-type: none;	
+	border:2px;
+	background-color: #4C424C;
+	overflow:hidden;
+	margin:0;
+	padding-left:20px;
+	padding-right:20px;
+}
+li
+{
+	float:left;
+}
+.active
+{
+    background-color: #4CAF50;
+    color:white;
+}
+li a
+{
+	display:block;
+	width:140px;
+	text-align:center;
+	padding:25px 20px;
+	text-decoration: none;
+	color:white;
+}
+
+li a:hover:not(.active)
+{
+	background-color: #4C424C;	
+}
+
+#hero_img
+{
+	width:100%;
+	height:100%;
+}
+.textblock 
+{
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+    width:150px;
+    height:100px;
+    border-radius:3px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding-left: 60px;
+    padding-bottom:20px; 
+    padding-top:20px;
+}
+button
+{
+	position: absolute;
+	bottom:40px;
+	height:30px;
+	border-radius: 3px;
+}
+#content
+{
+	margin-left: 10px;
+}
+.divs_4
+{
+	display: inline-block;
+	width: 300px;
+	border:1px solid #DCD8DC;
+	margin:10px;
+	box-shadow: 0 2px 2px 0 grey;
+}
+
+.heads
+{
+	display: inline-block;
+	width:400px;
+}
+.Web_name
+{
+	position:relative;
+	bottom:50px;
+	color: #000DA7;
+	align-items: center;
+}
+.Web_name h3
+{
+	font-weight: bolder;
+	font-style: italic;
+}
+#name
+{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-style: italic;
+	text-shadow: 2px 2px black;
+	padding-top: 60px;
+}
+.header
+{
+	/*background:linear-gradient(to right,#6B95EF,white,#35FC35,#62F82E,#4FFA13);
+	*/
+	 
+
+	height:210px;
+	margin-bottom:20px;
+}
+.navbar
+{
+	width:100%;
+	border-radius: 5px;	
+}
+.navhero
+{
+	width:100%;
+	margin-bottom:30px;
+	border:5px red;
+	box-shadow: 2px 2px 2px 2px #AAA;
+	border-radius: 5px;
+}
+.image
+{
+	width:100%;	
+}
+p
+{
+	padding:4px;
+}
+li
+{
+	display:block;
+}
+#div3
+{
+	float:right;
+}
+/*
+#bg{ display:block; margin-left:30px; margin-top:30px; width:200px ; height:120px; box-shadow: 2px 2px rgb(120,120,120); }
+#sn{ display:block; position:relative; left:30px; bottom:60px; width:200px; height:120px; box-shadow: 2px 2px rgb(120,120,120);}
+#pr{ display:block; position:relative; left:270px; bottom:120px; width:200px; height:120px; box-shadow: 2px 2px rgb(120,120,120);}
+#el{ display:block; position:relative; left:270px; bottom:180px; width:200px; height:120px; box-shadow: 2px 2px rgb(120,120,120);}
+#bg:hover{
+	opacity:0.8;
+}
+#sn:hover{
+	opacity:0.8;
+}
+#pr:hover{
+	opacity:0.8;
+}
+#el:hover{
+	opacity:0.8;
+}
+.relative{
+	position:relative;
+}
+.social{
+	list-style-type:none;
+	position:relative;
+	left:90px;
+	bottom:50px;
+	color:white;
+}
+.Bg{ position:absolute;left :150px; top : 90px; color:lightgrey;}
+.Pr{position:absolute;left :380px; bottom:101px; color:lightgrey;}
+.Sn{position:absolute;left :160px; top : 30px; color:lightgrey;}
+.Mix{position:absolute;left :416px; bottom:160px; color:lightgrey;}
+
+.sm{
+	color:white;
+}
+*/
+
+
+.mission{
+	font-family:alegreya;
+	font-size:22px;
+	border:2px solid #9EFE64;
+	border-radius: 3px;
+	box-shadow: 2px 2px #B7FB8D;
+	background : linear-gradient(#6CFC14,white,#6CFC14);
+	margin:20px;
+}
+
+/*footer starts*/
+
+#footer
+{
+	width:100%;
+	background-color: #111;
+}
+table
+{
+	color:#CCC;
+	width:100%;
+}
+#first_row
+{
+	text-transform: uppercase;
+	font-weight: bold; 	
+}
+td
+{
+	width:24%;
+	padding: 10px;
+}
+
+#tab_foot #p_foot tr td
+{
+	padding:0px;
+	margin: 0px;
+}
+.footlink
+{
+	text-decoration: none;
+	color:#CCC;
+	line-height: 40px;
+}
+.footlink:hover
+{
+	color: white;
+	font-weight: bold;
+}
+#feed
+{
+	width:200px;
+	height:100px;
+	padding:0px;
+	margin:0px;
+	resize: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px grey;
+}
+#sub
+{
+	margin-top:20px;
+	margin-left:60px;
+	width:70px;
+	height:25px;
+	border-radius: 3px;
+}
+</style>
+
+</head>
+
+<body id="body">
+
+<div class="header">
+
+	<div class="heads">
+	<img src="logo.png">
+	</div>
+	
+	<div id="head_div" class="heads">
+		<div class="Web_name">
+			<h1 id="name" align="center">Wild Soul</h1>
+			<h3 align="center">Roams Around In The Wilderness</h3>
+		</div>	
+	</div>
+
+	<div class="heads" id="div3">
+		<p>Follow Us : <img src="face.png"><img src="twitter.png"><img src="insta.jpg"></p>
+		<div class="search">
+			<input type="text" placeholder="Search" id="searchbox"> <img src="search.png">
+		</div>
+		<p style="line-height:25px;">Mail us at : wild123@smail.com<br>Mobile No. : 9541231230</p>
+	</div>	
+
+</div>
+
+		<!--nav bar starts-->
+
+<div class="navhero">
+
+	<div class="navbar">
+		
+	 	<ul>
+	 		<li id="nav"><a  class="active" href="C:\Users\user\Desktop\MY_WEBSITE\WP-I_Home_Page\home_page.html">HOME</a></li>
+	        <li id="nav"><a  href="C:\Users\user\Desktop\MY_WEBSITE\Content1\content1.html">BIG CATS</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content3\content3.html">PRIMATES</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content2\content2.html">SNAKES</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content4\content4.html">WILD</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\About Us\about.html" >ABOUT US</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Contact us\contact.html">CONTACT US</a></li>
+	    </ul>
+	</div>    
+
+
+	<!--header ends-->
+
+
+	<div class="hero" style="max-width:100%">
+ 		<div class="sshow"><img class="image" src="back_home.jpeg" style="width:100%"> <div class="textblock">Want to Help ?<br><a href="C:\Users\user\Desktop\MY_WEBSITE\Forms\jqform.html"><button>Click Here</button></a></div> </div>
+  		<div class="sshow"><img class="image" src="back_home2.jpeg" style="width:100%"> <div class="textblock">Want to Help ?<br><a href="C:\Users\user\Desktop\MY_WEBSITE\Forms\jqform.html"><button>Click Here</button></a></div> </div>
+    	<div class="sshow"><img class="image" src="back_home3.jpeg" style="width:100%"> <div class="textblock">Want to Help ?<br><a href="C:\Users\user\Desktop\MY_WEBSITE\Forms\jqform.html"><button>Click Here</button></a></div> </div>
+	</div>
+
+</div>
+
+	<script>
+		var myIndex = 0;
+		slideshow();
+
+		function slideshow()
+		{
+    		var i;
+    		var x = document.getElementsByClassName("sshow");
+    		for (i = 0; i < x.length; i++) 
+    		{
+       			x[i].style.display = "none";  
+   			}
+    		myIndex++;
+    		if (myIndex > x.length) 
+    		{
+    			myIndex = 1
+    		}    
+    		x[myIndex-1].style.display = "block";  
+    		setTimeout(slideshow, 3000); // Change image every 2 seconds
+		}
+	</script>
+
+
+<!--	<div>
+		<img src="back_home.jpeg" id="hero_img">
+		<div class="textblock">
+			Want to Help ?<br>
+			<button>Click Here</button>
+		</div>	
+	</div>   -->
+
+	<div id="content">
+
+	<div class="divs_4">
+		<img src="bigcats.jpg">
+		<h2 align="center">Big Cats</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet
+		<a style="color:purple;" href="C:\Users\user\Desktop\MY_WEBSITE\Content1\content1.html">Learn More</a></p>
+	</div>
+
+	<div class="divs_4">
+		<img src="elephants.jpg">
+		<h2 align="center">Wild</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet
+		<a style="color:purple;" href="C:\Users\user\Desktop\MY_WEBSITE\Content4\content4.html">Learn More</a></p>
+	</div>
+
+	<div class="divs_4">
+		<img src="primates.jpg">
+		<h2 align="center">Primates</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet
+		<a style="color:purple;" href="C:\Users\user\Desktop\MY_WEBSITE\Content3\content3.html">Learn More</a></p>
+	</div>
+
+	<div class="divs_4">
+		<img src="snakes.jpg">
+		<h2 align="center">Snakes</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet
+		<a style="color:purple;" href="C:\Users\user\Desktop\MY_WEBSITE\Content2\content2.html">Learn More</a></p>
+	</div>
+	</div>
+
+	
+
+	<!--mission starts-->
+
+	<div class="mission">
+	<h2 align="center"><u>Our Mission</u></h2>
+	<p align="center">Our Mission is to educate people about the wild and its vicious beauty.People are generally afraid of confronting wild animals and sometimes they lack the knowledge and skills required when they come face-to-face with a ferocious wild animal.People tend to 	believe that wild animals are a threat and hence react in an unusual way which the animal does not understand.And in the process,they
+	either get killed or are found guilty of killing a possibly endangered species of the animal.Our aim is to educate people about these wild animals so that they know exactly what to do when they encounter a specie of these wild and so called man-eating animals.</p>
+	
+	</div>
+	
+
+
+	<!--footer starts-->
+
+	<div id="footer">
+		<table id="tab_foot">
+			
+			<tr id="first_row">
+				<td>Follow Us</td>
+				<td>Contact Us</td>
+				<td>About Us</td>
+				<td>Send Your Feedback</td>
+			</tr>	
+
+
+
+			<tr>
+				<td valign="top">
+					<a href="" class="footlink">FACEBOOK</a><br>
+					<a href="" class="footlink">TWITTER</a><br>
+					<a href="" class="footlink">INSTAGRAM</a><br>	
+				</td>
+
+				<td valign="top"><p id="p_foot">5011/Kensington Oval,<br>St.Peters Lane,<br>Manchester, U.K. <br> P.O. Box No. : 345213</p>
+				</td>
+
+				<td valign="top">
+					<a href="" class="footlink">OUR MISSION</a><br>
+					<a href="" class="footlink">BE A VOLUNTEER</a><br>
+					<a href="" class="footlink">REACH OUT</a><br>
+				</td>
+
+				<td>
+					<textarea id="feed" placeholder="Enter Text Here"></textarea><br>
+					<input type="submit" value="SEND" id="sub">
+				</td>
+
+			</tr>
+			<tr>
+				<td><img src="face.png"><img src="twitter.png"><img src="insta.jpg"></td>
+				<td colspan="2" align="center">Copyright <i class="fa fa-copyright"></i> 2018 Wild Soul By Prajwal Kotian</td>
+			</tr>	
+
+		</table>	
+	</div>
+	
+
+</body>
+</html>
