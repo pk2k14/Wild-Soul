@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.search
+{
+    width:210px;
+    height:30px;
+    border:2px solid #999; 
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+#searchbox
+{
+    border-right:5px solid #999;
+    height:30px;
+    position: relative;
+    bottom:11px;
+}
+ul
+{
+    list-style-type: none;  
+    border:2px;
+    background-color: #4C424C;
+    overflow:hidden;
+    margin:0;
+    padding-left:20px;
+    padding-right:20px;
+}
+li
+{
+    float:left;
+}
+.active
+{
+    background-color: #4CAF50;
+    color:white;
+}
+li a
+{
+    display:block;
+    width:140px;
+    text-align:center;
+    padding:25px 20px;
+    text-decoration: none;
+    color:white;
+}
+
+li a:hover:not(.active)
+{
+    background-color: #4C424C;  
+}
+
+.heads
+{
+    display: inline-block;
+    width:400px;
+}
+.Web_name
+{
+    position:relative;
+    bottom:50px;
+    color: #000DA7;
+    align-items: center;
+}
+.Web_name h3
+{
+    font-weight: bolder;
+    font-style: italic;
+}
+#name
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+    padding-top: 60px;
+}
+.header
+{
+    /*background:linear-gradient(to right,#6B95EF,white,#35FC35,#62F82E,#4FFA13);
+    */
+     
+
+    height:210px;
+    margin-bottom:20px;
+}
+.navbar
+{
+    width:100%;
+    border-radius: 5px; 
+}
+li
+{
+    display:block;
+}
+#div3
+{
+    float:right;
+}
+
+/*ends*/
+
+body, html {
+    height: 100%;
+    width:100%;
+}
+#content
+{
+    margin-left: 10px;
+}
+.divs_4
+{
+    display: inline-block;
+    width: 300px;
+    border:1px solid #DCD8DC;
+    margin:10px;
+    box-shadow: 0 2px 2px 0 grey;
+}
+.parallax {
+    /* The image used */
+    background-image: url('main1.jpg');
+
+    /* Full height */
+    height: 50%; 
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url('main2.jpg');
+
+    /* Full height */
+    height: 50%; 
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url('main3.jpg');
+
+    /* Full height */
+    height: 50%; 
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mission
+{
+    border-radius: 3px;
+    border: 2px solid #92FC59; 
+    box-shadow: 2px 2px #92FC59;
+    background-color: #5AD01C;
+    color: white;
+    width:94%;
+    padding:30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+/*footer starts*/
+
+#footer
+{
+    width:100%;
+    background-color: #111;
+}
+#footer table
+{
+    color:#CCC;
+    width:100%;
+}
+#first_row
+{
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+#footer td
+{
+    width:24%;
+    padding: 10px;
+}
+
+#tab_foot #p_foot tr td
+{
+    padding:0px;
+    margin: 0px;
+}
+.footlink
+{
+    text-decoration: none;
+    color:#CCC;
+    line-height: 40px;
+}
+.footlink:hover
+{
+    color: white;
+    font-weight: bold;
+}
+#feed
+{
+    width:200px;
+    height:100px;
+    padding:0px;
+    margin:0px;
+    resize: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px grey;
+}
+#sub
+{
+    margin-top:20px;
+    margin-left:60px;
+    width:70px;
+    height:25px;
+    border-radius: 3px;
+}
+
+</style>
+</head>
+<body>
+
+
+    
+<div class="header">
+
+    <div class="heads">
+    <img src="logo.png">
+    </div>
+    
+    <div id="head_div" class="heads">
+        <div class="Web_name">
+            <h1 id="name" align="center">Wild Soul</h1>
+            <h3 align="center">Roams Around In The Wilderness</h3>
+        </div>  
+    </div>
+
+    <div class="heads" id="div3">
+        <p>Follow Us : <img src="face.png"><img src="twitter.png"><img src="insta.jpg"></p>
+        <div class="search">
+            <input type="text" placeholder="Search" id="searchbox"><img src="search.png">
+        </div>
+        <p style="line-height:25px;">Mail us at : wild123@smail.com<br>Mobile No. : 9541231230</p>
+    </div>  
+
+</div>
+
+        <!--nav bar starts-->
+
+    <div class="navbar">
+        
+        <ul>
+            <li id="nav"><a  href="C:\Users\user\Desktop\MY_WEBSITE\WP-I_Home_Page\home_page.html">HOME</a></li>
+            <li id="nav"><a  href="C:\Users\user\Desktop\MY_WEBSITE\Content1\content1.html">BIG CATS</a></li>
+            <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content3\content3.html">PRIMATES</a></li>
+            <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content2\content2.html">SNAKES</a></li>
+            <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content4\content4.html">WILD</a></li>
+            <li id="nav"><a class="active" href="C:\Users\user\Desktop\MY_WEBSITE\About Us\about.html" >ABOUT US</a></li>
+            <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Contact us\contact.html">CONTACT US</a></li>
+        </ul>
+    </div>    
+
+<div class="parallax"></div>
+
+    <div class="mission">
+    <h2 align="center"><u>Our Mission</u></h2>
+    <p align="center">Our Mission is to educate people about the wild and its vicious beauty.People are generally afraid of confronting wild animals and sometimes they lack the knowledge and skills required when they come face-to-face with a ferocious wild animal.People tend to  believe that wild animals are a threat and hence react in an unusual way which the animal does not understand.And in the process,they
+    either get killed or are found guilty of killing a possibly endangered species of the animal.Our aim is to educate people about these wild animals so that they know exactly what to do when they encounter a specie of these wild and so called man-eating animals.</p>
+    
+    </div>
+    
+
+
+<div class="parallax1"></div>
+
+<div id="content">
+    <h2 align="center">OUR TEAM</h2>
+    <div class="divs_4">
+        <img src="me.jpg">
+        <h3 align="center">FOUNDER</h3>
+        </div>
+
+    <div class="divs_4">
+        <img src="man3.jpg">
+        <h3 align="center">CEO</h3>
+        </div>
+
+    <div class="divs_4">
+        <img src="woman.jpg">
+        <h3 align="center">CONTENT DEVELOPER</h3>
+       </div>
+
+    <div class="divs_4">
+        <img src="man2.png">
+        <h3 align="center">DIRECTOR</h3>
+        </div>
+    </div>
+
+<div class="parallax2"></div>
+
+
+
+</div>
+
+
+<!--footer-->
+
+    <div id="footer">
+        <table id="tab_foot">
+            
+            <tr id="first_row">
+                <td>Follow Us</td>
+                <td>Contact Us</td>
+                <td>About Us</td>
+                <td>Send Your Feedback</td>
+            </tr>   
+
+
+
+            <tr>
+                <td valign="top">
+                    <a href="" class="footlink">FACEBOOK</a><br>
+                    <a href="" class="footlink">TWITTER</a><br>
+                    <a href="" class="footlink">INSTAGRAM</a><br>   
+                </td>
+
+                <td valign="top"><p id="p_foot">5011/Kensington Oval,<br>St.Peters Lane,<br>Manchester, U.K. <br> P.O. Box No. : 345213</p>
+                </td>
+
+                <td valign="top">
+                    <a href="" class="footlink">OUR MISSION</a><br>
+                    <a href="" class="footlink">BE A VOLUNTEER</a><br>
+                    <a href="" class="footlink">REACH OUT</a><br>
+                </td>
+
+                <td>
+                    <textarea id="feed" placeholder="Enter Text Here"></textarea><br>
+                    <input type="submit" value="SEND" id="sub">
+                </td>
+
+            </tr>
+            <tr>
+                <td><img src="face.png"><img src="twitter.png"><img src="insta.jpg"></td>
+                <td colspan="2" align="center">Copyright <i class="fa fa-copyright"></i> 2018 Wild Soul By Prajwal Kotian</td>
+            </tr>   
+
+        </table>    
+    </div>
+
+
+</body>
+</html>
