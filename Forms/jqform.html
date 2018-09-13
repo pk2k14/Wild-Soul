@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>JQuery Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	function ValidateEmail(x) 
+	{
+        var expr = /^([\w-\.]+)@([\w-\.]+)\.([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        return expr.test(x);
+    }
+	$(document).ready(function()
+	{
+    	$(".first").hide();
+    	$("#butend").click(function ()
+	 	{
+	 		$(".first").css("color","red");
+
+	 		if( $("#fn").val()=="" || $("#un").val()=="" || $("#pw").val()=="" || $("#em").val()=="" || $("#phone").val()=="")
+	 		{
+	 			if($("#fn").val()=="")
+	 			{
+	 				$("#first").show();
+	 				$("#first").append("Please fill in all the details");
+	 			}
+	 			else if($("#un").val()=="")
+	 			{
+	 				$("#second").show();
+	 				$("#second").append("Please fill in all the details");
+	 			}
+	 			else if($("#pw").val()=="")
+	 			{
+	 				$("#third").show();
+	 				$("#third").append("Please fill in all the details");
+	 			}
+	 			else if($("#em").val()=="")
+	 			{
+	 				$("#fourth").show();
+	 				$("#fourth").append("Please fill in all the details");
+	 			}
+	 			else if($("#fn").val()=="")	
+	 			{
+	 				$("#fifth").show();
+	 				$("#fifth").append("Please fill in all the details");
+	 			}
+
+	 		}	
+	 		
+        	else if( $("#pw").val().length<8 || $("#pw").val().length>14)
+	 		{
+	 			$("#third").show();
+	 			$("#third").append("Password length should be between 8-14 characters !");
+	 		}	
+	 		else if (!(ValidateEmail($("#em").val() ) ) ) 
+	 		{
+	 			$("#fourth").show();
+            	$("#fourth").append("Enter a valid mail-id");
+        	}
+	 		else if((!$.isNumeric( $("#phone").val() )) || $("#phone").val().length>10 || $("#phone").val().length<10)
+	 		{
+	 			$("#fifth").show();
+	 			$("#fifth").append("Enter a valid phone number !");
+	 		}
+	 	});
+	 	$("#login").click(function ()
+	 	{
+	 		$(".rows").hide();
+	 		$("#butend").val("LOGIN")
+	 	});
+	 	$("#signup").click(function ()
+	 	{
+	 		$(".rows").show();
+	 	});	
+
+	 });	
+	
+
+</script>
+
+
+
+<style>
+.search
+{
+	width:210px;
+	height:30px;
+	border:2px solid #999; 
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+}
+#searchbox
+{
+	border-right:5px solid #999;
+	height:30px;
+	position: relative;
+	bottom:11px;
+}
+ul
+{
+	list-style-type: none;	
+	border:2px;
+	background-color: #4C424C;
+	overflow:hidden;
+	margin:0;
+	padding-left:20px;
+	padding-right:20px;
+}
+li
+{
+	float:left;
+}
+.active
+{
+    background-color: #AAA;
+    color:white;
+}
+li a
+{
+	display:block;
+	width:140px;
+	text-align:center;
+	padding:25px 20px;
+	text-decoration: none;
+	color:white;
+}
+
+li a:hover:not(.active)
+{
+	background-color: #4C424C;	
+}
+
+.heads
+{
+	display: inline-block;
+	width:400px;
+}
+.Web_name
+{
+	position:relative;
+	bottom:50px;
+	color: #000DA7;
+	align-items: center;
+}
+.Web_name h3
+{
+	font-weight: bolder;
+	font-style: italic;
+}
+#name
+{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-style: italic;
+	text-shadow: 2px 2px black;
+	padding-top: 60px;
+}
+.header
+{
+	/*background:linear-gradient(to right,#6B95EF,white,#35FC35,#62F82E,#4FFA13);
+	*/
+	 
+
+	height:210px;
+	margin-bottom:20px;
+}
+.navbar
+{
+	width:100%;
+	border-radius: 5px;	
+}
+li
+{
+	display:block;
+}
+#div3
+{
+	float:right;
+}
+
+/*head ends*/
+#butend
+{
+	color: black;
+	background-color:#6BF814;
+	height:30px;
+	border-radius: 2px; 
+}
+.main table
+{
+	border:1px solid #6BF814;
+	border-radius: 4px;
+	box-shadow: 2px 2px #A5FA71;
+	position: relative;
+	bottom: 200px;
+	left:400px;
+}
+
+.main input[type=password]
+{
+	border-radius: 3px;
+	width:200px;
+	height:25px;
+}
+.main input[type=text]
+{
+	border-radius: 3px;
+	width:200px;
+	height:25px;
+}
+.main input[type=email]
+{
+	border-radius: 3px;
+	width:200px;
+	height:25px;
+}
+.main button
+{
+	width:264px;
+	height:50px;
+	border-radius: 3px;
+	font-size: 20px;
+	color: #20B80E;
+	background-color:#6BF814;
+}
+.buttons
+{
+position: relative;
+left:400px;
+top:55px;
+}
+
+
+
+
+#footer
+{
+    width:100%;
+    background-color: #111;
+}
+#footer table
+{
+    color:#CCC;
+    width:100%;
+}
+#first_row
+{
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+#footer td
+{
+    width:24%;
+    padding: 10px;
+}
+
+#tab_foot #p_foot tr td
+{
+    padding:0px;
+    margin: 0px;
+}
+.footlink
+{
+    text-decoration: none;
+    color:#CCC;
+    line-height: 40px;
+}
+.footlink:hover
+{
+    color: white;
+    font-weight: bold;
+}
+#feed
+{
+    width:200px;
+    height:100px;
+    padding:0px;
+    margin:0px;
+    resize: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px grey;
+}
+#sub
+{
+    margin-top:20px;
+    margin-left:60px;
+    width:70px;
+    height:25px;
+    border-radius: 3px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+
+	<div class="heads">
+	<img src="logo.png">
+	</div>
+	
+	<div id="head_div" class="heads">
+		<div class="Web_name">
+			<h1 id="name" align="center">Wild Soul</h1>
+			<h3 align="center">Roams Around In The Wilderness</h3>
+		</div>	
+	</div>
+
+	<div class="heads" id="div3">
+		<p>Follow Us : <img src="face.png"><img src="twitter.png"><img src="insta.jpg"></p>
+		<div class="search">
+			<input type="text" placeholder="Search" id="searchbox"><img src="search.png">
+		</div>
+		<p style="line-height:25px;">Mail us at : wild123@smail.com<br>Mobile No. : 9541231230</p>
+	</div>	
+
+</div>
+
+		<!--nav bar starts-->
+
+<div class="navhero">
+
+	<div class="navbar">
+		
+	 	<ul>
+	 		<li id="nav"><a  href="C:\Users\user\Desktop\MY_WEBSITE\WP-I_Home_Page\home_page.html">HOME</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content1\content1.html">BIG CATS</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content3\content3.html">PRIMATES</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content2\content2.html">SNAKES</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Content4\content4.html">WILD</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\About Us\about.html" >ABOUT US</a></li>
+	        <li id="nav"><a href="C:\Users\user\Desktop\MY_WEBSITE\Contact us\contact.html">CONTACT US</a></li>
+	    </ul>
+	</div>    
+
+<div class="main">
+
+<div class="buttons">
+<button id="signup">SIGN UP</button><button id="login">LOGIN</button>
+</div>
+
+<table cellpadding="10px">
+
+<tr bgcolor="#6BF814">
+	<td colspan="2"><div><a href="https://en-gb.facebook.com/login/"><img src="fb.png"></a><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="gmail.png"></a></div></td>
+</tr>	
+
+<tr class="rows">
+	<td align="center">First Name : </td><td align="center"><input type="text" id="fn" name="FirstName" value="Joseph"></td><br><br>
+</tr>	
+
+<tr>
+	<td align="center" colspan="2" id="first" class="first"></td>
+</tr>
+
+
+<tr>
+	<td align="center">Username : </td><td align="center"><input type="text" id="un" name="Username" value=""></td><br><br>
+</tr>
+
+<tr>
+	<td align="center" colspan="2"id="second" class="first"></td>
+</tr>
+
+<tr>	
+	<td align="center">Password : </td><td align="center"><input type="password" id="pw" name="Password" value=""></td><br><br>
+</tr>
+
+<tr>
+	<td id="third" align="center" colspan="2" class="first"></td>
+</tr>
+
+
+<tr class="rows">	
+	<td align="center">E-Mail : </td><td align="center"><input type="text" id="em" name="email" value="jcm@gmail.com"></td><br><br>
+</tr>
+
+<tr>
+	<td id="fourth" class="first" align="center" colspan="2"></td>
+</tr>
+
+<tr class="rows">
+	<td align="center">Phone No : </td><td align="center"><input type="text" id="phone" name="ph number" value="1231234567"></td><br><br>
+</tr>
+
+<tr>
+	<td id="fifth" class="first" colspan="2" align="center"></td>
+</tr>
+
+<tr class="rows">	
+	<td width="150px" align="center">Favourite Animal :</td>
+	<td align="center"><select id="sel">
+	<option >Elephant</option>
+	<option >Giraffe</option>
+	<option >Zebra</option>
+	<option >Antelope</option>
+	<option >Deer</option>
+	<option >Macaque</option>
+	</select></td><br><br>
+
+</tr>	
+
+<tr>
+	<td colspan="2" align="center"><input type="submit" id="butend" value="SIGN UP"></td><br><br>
+</tr>
+
+</table>
+</div>
+
+
+<!--footer-->
+
+	<div id="footer">
+		<table id="tab_foot">
+			
+			<tr id="first_row">
+				<td>Follow Us</td>
+				<td>Contact Us</td>
+				<td>About Us</td>
+				<td>Send Your Feedback</td>
+			</tr>	
+
+
+
+			<tr>
+				<td valign="top">
+					<a href="" class="footlink">FACEBOOK</a><br>
+					<a href="" class="footlink">TWITTER</a><br>
+					<a href="" class="footlink">INSTAGRAM</a><br>	
+				</td>
+
+				<td valign="top"><p id="p_foot">5011/Kensington Oval,<br>St.Peters Lane,<br>Manchester, U.K. <br> P.O. Box No. : 345213</p>
+				</td>
+
+				<td valign="top">
+					<a href="" class="footlink">OUR MISSION</a><br>
+					<a href="" class="footlink">BE A VOLUNTEER</a><br>
+					<a href="" class="footlink">REACH OUT</a><br>
+				</td>
+
+				<td>
+					<textarea id="feed" placeholder="Enter Text Here"></textarea><br>
+					<input type="submit" value="SEND" id="sub">
+				</td>
+
+			</tr>
+			<tr>
+				<td><img src="face.png"><img src="twitter.png"><img src="insta.jpg"></td>
+				<td colspan="2" align="center">Copyright <i class="fa fa-copyright"></i> 2018 Wild Soul By Prajwal Kotian</td>
+			</tr>	
+
+		</table>	
+	</div>
+
+</body>
+
+</html>
