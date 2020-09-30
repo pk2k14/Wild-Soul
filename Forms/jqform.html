@@ -17,7 +17,7 @@
 	 	{
 	 		$(".first").css("color","red");
 
-	 		if( $("#fn").val()=="" || $("#un").val()=="" || $("#pw").val()=="" || $("#em").val()=="" || $("#phone").val()=="")
+	 		if( $("#fn").val()=="" || $("#un").val()=="" && $("#pw").val()=="" || $("#em").val()=="" || $("#phone").val()=="")
 	 		{
 	 			if($("#fn").val()=="")
 	 			{
@@ -39,7 +39,7 @@
 	 				$("#fourth").show();
 	 				$("#fourth").append("Please fill in all the details");
 	 			}
-	 			else if($("#fn").val()=="")	
+	 			else if($("#fn").val()!="")	
 	 			{
 	 				$("#fifth").show();
 	 				$("#fifth").append("Please fill in all the details");
